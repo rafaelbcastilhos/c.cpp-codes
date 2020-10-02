@@ -1,5 +1,5 @@
-#define TAM_P 4 // tamanho pilha principal
-#define TAM_TEMP 16 // tamanho pilha temporaria
+#define TAM_P 4
+#define TAM_TEMP 16
 
 typedef struct {
 	int *items;

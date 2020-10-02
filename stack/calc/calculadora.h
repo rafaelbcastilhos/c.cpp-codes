@@ -1,6 +1,3 @@
-#ifndef STACK_H_INCLUDED
-#define STACK_H_INCLUDED
-
 typedef struct {
 	int *items;
 	int top;
@@ -24,6 +21,3 @@ int st_pop(stack_t *, int);
 int st_peek(stack_t*);
 
 void st_destroy(stack_t *);
-
-
-#endif // STACK_H_INCLUDED
