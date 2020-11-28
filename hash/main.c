@@ -1,8 +1,3 @@
-// código desenvolvido por rafael b. castilhos
-// ads - ifrs, 2020. estrutura de dados - listas encadeadas
-// compilar: gcc main.c hash.c hash.h -o hash
-// executar: ./hash
-
 #include <stdio.h>
 #include "hash.h"
 
@@ -21,21 +16,17 @@ int main(void){
     int op = 0, value = 0;
 
     do{
-        //entrada da opção do usuário
         menu();
         scanf("%d", &op);
 
 		switch(op){
 			case 1:
-                // cadastrar produto
                 add(&head);
 				break;
 			case 2:
-                // consultar pedido por tipo
                 search(head);
 				break;
 			case 3:
-                // verificar quantidade por tipo
                 count(head);
                 break;
             case 4:
