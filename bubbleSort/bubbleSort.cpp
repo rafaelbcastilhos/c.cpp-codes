@@ -2,8 +2,8 @@
 #include <iomanip>
 using namespace std;
 
-void PrintArray (int ArrayName[] , const int ArraySize);
-void BubbleSort(int ArrayName[] , const int ArraySize);
+void PrintArray (int ArrayName[], const int ArraySize);
+void BubbleSort(int ArrayName[], const int ArraySize);
 
 int main(){
 	const int ArraySize = 10;
@@ -14,7 +14,7 @@ int main(){
 	BubbleSort (Array1,ArraySize);
 	cout << "\nAfterSorting:" << endl;
 	PrintArray(Array1,ArraySize);
-	
+
 	return 0;
 }
 
