@@ -3,21 +3,21 @@
 using namespace std;
 
 int main(){
-    cout << "\nFood Stack" << endl;
+   cout << "\nFood Stack" << endl;
 
-    stack<int> mystack;
+   stack<int> mystack;
 
-    mystack.push(4);
-    mystack.push(2);
-    mystack.push(1);
-    mystack.push(3);
+   mystack.push(4);
+   mystack.push(2);
+   mystack.push(1);
+   mystack.push(3);
 
-    cout << "Stack: " << endl;
-    while(mystack.empty() == false){
-        int topnum = mystack.top();
-        cout << topnum << " ";
-        mystack.pop();
-    }
+   cout << "Stack: " << endl;
+   while(mystack.empty() == false){
+      int topnum = mystack.top();
+      cout << topnum << " ";
+      mystack.pop();
+   }
 	cout << endl;
 
 	struct Food{
@@ -32,7 +32,7 @@ int main(){
 		}
 
 		Food(): tastesGood(false), quantity(0), name("Air") {}
-    };
+   };
 
 	stack<Food*> foodstack;
 
@@ -53,7 +53,7 @@ int main(){
 			cout << "tastes good!" << endl;
 		else
 			cout << "tastes bad!" << endl;
-    }
+   }
 
 	return 0;
 }
