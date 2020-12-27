@@ -3,11 +3,10 @@
 #include <ctime>
 using namespace std;
 
-int main()
-{
-    cout << "**************************************" << endl;
-    cout << "* Bem-vindos ao jogo da adivinhação! *" << endl;
-    cout << "**************************************" << endl;
+int main(){
+    cout << "************************" << endl;
+    cout << "* Jogo da adivinhação! *" << endl;
+    cout << "************************" << endl;
 
     cout << "Escolha o seu nível de dificuldade:" << endl;
     cout << "Fácil (F), Médio (M) ou Difícil (D)" << endl;
@@ -17,15 +16,15 @@ int main()
 
     int numero_de_tentativas;
 
-    if(dificuldade == 'F'){
+    if(dificuldade == 'F')
         numero_de_tentativas = 15;
-    }
-    else if(dificuldade == 'M'){
+
+    else if(dificuldade == 'M')
         numero_de_tentativas = 10;
-    }
-    else {
+
+    else
         numero_de_tentativas = 5;
-    }
+
 
     srand(time(NULL));
     const int NUMERO_SECRETO = rand() % 100;
@@ -48,26 +47,20 @@ int main()
         bool acertou = chute == NUMERO_SECRETO;
         bool maior = chute > NUMERO_SECRETO;
 
-        if (acertou)
-        {
+        if (acertou){
             cout << "Parabéns! Você acertou o número secreto!" << endl;
             nao_acertou = false;
             break;
         }
         else if (maior)
-        {
             cout << "Seu chute foi maior que o número secreto!" << endl;
-        }
         else
-        {
             cout << "Seu chute foi menor que o número secreto!" << endl;
-        }
     }
 
     cout << "Fim de jogo!" << endl;
-    if(nao_acertou){
+    if(nao_acertou)
         cout << "Você perdeu! Tente novamente!" << endl;
-    }
     else{
         cout << "Você acertou o número secreto em " << tentativas << " tentativas" << endl;
         cout.precision(2);
